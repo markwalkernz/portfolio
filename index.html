@@ -1,0 +1,135 @@
+<!-- Portfolio page with bootstrap. -->
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <title>Mark Walker</title>
+
+</head>
+
+<body>
+
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">Mark Walker</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">
+            About<span class="sr-only">(current)</span>
+          </a>
+          <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-item nav-link" href="contact.html">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  
+  </nav>
+
+  <!-- container for page content -->
+  <div class="container" id="wrapper">
+
+    <div class="row">
+
+      <!-- main section column -->
+      <div class="col-md-9">
+
+        <section class="panel panel-default">
+
+          <div class="panel-heading">
+            <h1>About Me</h1>
+          </div>
+
+          <div class="panel-content">
+
+            <img src="assets/images/headshot.jpg" id="headshot" class="img-fluid" alt="Mark Walker">
+
+            <p>A civil engineer with 20 years experience in the transportation sector. Specific interests include traffic operations, intelligent transportation systems and project management. Originally from New Zealand, I am now living in Chicago, Illinois.</p>
+
+            <p>A graduate of the University of Auckland, I have a Bachelor of Engineering degree and a Post Graduate Diploma in Business.</p>
+
+            <p>I have completed a six-month intensive course in full stack web development, covering the following technologies;</p>
+
+            <ul>
+              <li>Front end - HTML, CSS, Javascript, jQuery, Bootstrap, React.js</li>
+              <li>Back end - Node.js, Express, MySQL, MongoDB, Mongoose</li>
+              <li>Development and deployment - git, Heroku</li>
+            </ul>
+
+            <p>Experience leading business units in both the public and private sector. I particularly enjoy working collaboratively in teams with a diverse range of skills and backgrounds to deliver great outcomes.</p>
+
+          </div>
+
+        </section>
+
+      </div> <!-- end main section column -->
+
+      <!-- sidebar column -->
+      <div class="col-md-3">
+
+        <aside class="panel panel-default" id="sidebar">
+
+          <div class="panel-heading">
+            <h3>Connect with Me</h3>
+          </div>
+
+          <div class="panel-content">
+
+            <a href="https://github.com/markwalkernz" target="_blank">
+              <img src="assets/images/github-icon.png" class="social" alt="GitHub">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/mark-walker-5b25107" target="_blank">
+              <img src="assets/images/linkedin-icon.png" class="social" alt="LinkedIn">
+            </a>
+            
+            <a href="https://stackoverflow.com/users/8395344/mark-walker?tab=profile" target="_blank">
+              <img src="assets/images/stackoverflow-icon.png" class="social" alt="Stack Overflow">
+            </a>
+
+          </div>
+
+        </aside>
+
+      </div> <!-- end sidebar column -->
+
+    </div> <!-- end row -->
+
+  </div> <!-- end container for page content -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid">
+      Copyright &copy; 2017 Mark Walker
+    </div>
+  </footer>
+
+</body>
+
+</html>

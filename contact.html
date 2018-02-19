@@ -1,0 +1,140 @@
+<!-- Portfolio page with bootstrap. -->
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <title>Mark Walker</title>
+
+</head>
+
+<body>
+
+  <!-- header, including nav bar -->
+  <header>
+
+  <div class="container">
+
+      <div class="row justify-content-between">
+
+        <div class="col-xs-12 col-md-6" id="masthead">
+          <a class="navbar-brand" href="index.html">Mark Walker</a>
+        </div>
+
+        <div class="col-xs-12 col-md-4 align-center">
+          <ul class="nav navbar-nav flex-row justify-content-around">
+            <li><a class="nav-link" href="index.html">About</a></li>
+            <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+  </div>
+
+  </header>
+
+  <!-- container for page content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- main section column -->
+      <div class="col-md-8">
+
+        <section class="panel panel-default">
+
+          <div class="panel-heading">
+            <h1>Contact</h1>
+          </div>
+
+          <div class="panel-content">
+
+            <form>
+
+              <div class="form-group">
+
+                <label for="InputName">Name</label>
+                <input type="text" class="form-control" id="InputName" placeholder="John Smith">
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="InputEmail">Email address</label>
+                <input type="email" class="form-control" id="InputEmail" placeholder="example@gmail.com">
+                
+              </div>
+
+              <div class="form-group">
+
+                <label for="InputMessage">Message</label>
+                <textarea class="form-control" id="Message" rows="8"></textarea>
+
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+
+          </div>
+
+        </section>
+
+      </div> <!-- end main section column -->
+
+      <!-- sidebar column -->
+      <div class="col-md-4">
+
+        <aside class="panel panel-default">
+
+          <div class="panel-heading">
+            <h2>Connect with Me</h2>
+          </div>
+
+          <div class="panel-content">
+
+            <a href="https://github.com/markwalkernz" target="_blank">
+              <img src="assets/images/github-icon.png" class="social" alt="GitHub">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/mark-walker-5b25107" target="_blank">
+              <img src="assets/images/linkedin-icon.png" class="social" alt="LinkedIn">
+            </a>
+            
+            <a href="https://stackoverflow.com/users/8395344/mark-walker?tab=profile" target="_blank">
+              <img src="assets/images/stackoverflow-icon.png" class="social" alt="Stack Overflow">
+            </a>
+
+          </div>
+
+        </aside>
+
+      </div> <!-- end sidebar column -->
+
+    </div> <!-- end row -->
+
+  </div> <!-- end container for page content -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid">
+      Copyright &copy; 2017 Mark Walker
+    </div>
+  </footer>
+
+</body>
+
+</html>
