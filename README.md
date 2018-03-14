@@ -1,2 +1,2 @@
 # portfolio
-A portfolio of my recent work.
+A portfolio of my key projects.
