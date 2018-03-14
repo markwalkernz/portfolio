@@ -11,7 +11,13 @@
 
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -21,38 +27,37 @@
 
 <body>
 
-  <!-- header, including nav bar -->
-  <header>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 
-  <div class="container">
+    <div class="container">
 
-      <div class="row justify-content-between">
+      <a class="navbar-brand" href="index.html">Mark Walker</a>
 
-        <div class="col-xs-12 col-md-6" id="masthead">
-          <a class="navbar-brand" href="index.html">Mark Walker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavaltMarkup" aria-controls="navbarNavaltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavaltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">About</a>
+          <a class="nav-item nav-link active" href="portfolio.html">
+            Portfolio<span class="sr-only">(current)</span>
+          </a>
         </div>
-
-        <div class="col-xs-12 col-md-4 align-center">
-          <ul class="nav navbar-nav flex-row justify-content-around">
-            <li><a class="nav-link" href="index.html">About</a></li>
-            <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
       </div>
 
-  </div>
-
-  </header>
+    </div>
+  
+  </nav>
 
   <!-- container for page content -->
-  <div class="container">
+  <div class="container" id="wrapper">
 
     <div class="row">
 
       <!-- main section column -->
-      <div class="col-md-8">
+      <div class="col-md-9">
 
         <section class="panel panel-default">
 
@@ -64,59 +69,128 @@
 
             <div class="row">
 
-
-              <div class="col-xs-12 col-sm-6 col-md-12 work">
-                <img src="assets/images/hangman.png" class="img-fluid" alt="Hangman">
-                <h3>Hangman</h3>
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="card">
+                  <a href="https://www.youtube.com/watch?v=y1lp4duYhgA" target="_blank">
+                  <img src="assets/images/tmc.png" class="card-img-top" alt="Traffic Operations">
+                  </a>
+                  <div class="card-body">
+                    <h3 class="card-title">Traffic Operations</h3>
+                    <p class="card-text">Design, development and operation of a 24/7 traffic management centre for New Zealand highways.</p>
+                  </div>
+                </div>
               </div>
 
-              <div class="col-xs-12 col-sm-6 col-md-12 work">
-                <img src="assets/images/rpg.jpg" class="img-fluid" alt="RPG Game">
-                <h3>RPG Game</h3>
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="card">
+                  <a href="http://www.journeys.nzta.govt.nz/traffic-and-travel-information/auckland-travel-times" target="_blank">
+                  <img src="assets/images/aucklandtt.png" class="card-img-top" alt="Auckland Travel Times">
+                  </a>
+                  <div class="card-body">
+                    <h3 class="card-title">Auckland Highways</h3>
+                    <p class="card-text">Data collection system and travel time calculations for the urban highway network in Auckland, New Zealand.</p>
+                  </div>
+                </div>
               </div>
-
 
             </div> <!-- end row -->
-            
+
+            <div class="row">
+              
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="card">
+                  <a href="https://data.gov.uk/dataset/dft-eng-srn-routes-journey-times" target="_blank">
+                  <img src="assets/images/highwayseng.png" class="card-img-top" alt="UK Journey Times">
+                  </a>
+                  <div class="card-body">
+                    <h3 class="card-title">UK Journey Times</h3>
+                    <p class="card-text">A system for calculation of journey times from speed data collected on the UK motorway network.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="card">
+                  <a href="http://www.nzta.govt.nz/resources/state-highway-traffic-growth" target="_blank">
+                  <img src="assets/images/trafficdata.png" class="card-img-top" alt="Traffic Data">
+                  </a>
+                  <div class="card-body">
+                    <h3 class="card-title">Traffic Data</h3>
+                    <p class="card-text">A data warehouse for aggregation and reporting of traffic data on New Zealand Highways.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- end row -->
 
             <div class="row">
 
-
-              <div class="col-xs-12 col-sm-6 col-md-12 work">
-                <img src="assets/images/trivia.jpg" class="img-fluid" alt="Trivia Game">
-                <h3>Trivia Game</h3>
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="card">
+                  <a href="https://reaction-radio.herokuapp.com" target="_blank">
+                  <img src="assets/images/reaction.png" class="card-img-top" alt="Reaction Radio">
+                  </a>
+                  <div class="card-body">
+                    <h3 class="card-title">Reaction Radio</h3>
+                    <p class="card-text">An app that helps you to search Spotify's song library and create a playlist that suits your mood.</p>
+                  </div>
+                </div>
               </div>
 
-              <div class="col-xs-12 col-sm-6 col-md-12 work">
-                <img src="assets/images/widget.jpg" class="img-fluid" alt="Rutgers Info Widget">
-                <h3>Rutgers Info Widget</h3>
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="card">
+                  <a href="https://teambrainfood.github.io/project-green" target="_blank">
+                  <img src="assets/images/projectgreen.png" class="card-img-top" alt="Project Green">
+                  </a>
+                  <div class="card-body">
+                    <h3 class="card-title">Project Green</h3>
+                    <p class="card-text">Provides nutritional information and recipes to maintain a healthy lifestyle. Uses data from USDA and Edamam APIs.</p>
+                  </div>
+                </div>
               </div>
 
             </div> <!-- end row -->
-
 
             <div class="row">
 
-              <div class="col-xs-12 col-sm-6 col-md-12 work">
-                <img src="assets/images/rps.jpg" class="img-fluid" alt="Rock Paper Scissors">
-                <h3>Rock Paper Scissors</h3>
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="card">
+                  <a href="https://warm-bayou-64851.herokuapp.com/" target="_blank">
+                  <img src="assets/images/gigguide.png" class="card-img-top" alt="Traffic Data">
+                  </a>
+                  <div class="card-body">
+                    <h3 class="card-title">Chicago Gig Guide</h3>
+                    <p class="card-text">A web app that uses data scraped from the Chicago Reader website to populate a Mongo DB database.</p>
+                  </div>
+                </div>
               </div>
 
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="card">
+                  <a href="https://ancient-mountain-56964.herokuapp.com/" target="_blank">
+                  <img src="assets/images/nyt.png" class="card-img-top" alt="Article Search">
+                  </a>
+                  <div class="card-body">
+                    <h3 class="card-title">Article Search</h3>
+                    <p class="card-text">Search the New York Times for articles and save them for later reading. Uses the New York Times article search API.</p>
+                  </div>
+                </div>
+              </div>
 
             </div> <!-- end row -->
-
 
           </section>
 
         </div> <!-- end main section column -->
 
-      <!-- sidebar column -->
-      <div class="col-md-4">
 
-        <aside class="panel panel-default">
+      <!-- sidebar column -->
+      <div class="col-md-3">
+
+        <aside class="panel panel-default" id="sidebar">
 
           <div class="panel-heading">
-            <h2>Connect with Me</h2>
+            <h3>Connect</h3>
           </div>
 
           <div class="panel-content">
@@ -127,10 +201,6 @@
             
             <a href="https://www.linkedin.com/in/mark-walker-5b25107" target="_blank">
               <img src="assets/images/linkedin-icon.png" class="social" alt="LinkedIn">
-            </a>
-            
-            <a href="https://stackoverflow.com/users/8395344/mark-walker?tab=profile" target="_blank">
-              <img src="assets/images/stackoverflow-icon.png" class="social" alt="Stack Overflow">
             </a>
 
           </div>
